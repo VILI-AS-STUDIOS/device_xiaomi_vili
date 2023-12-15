@@ -25,6 +25,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# FaceSense
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.face.sense_service.camera_id=1
+
 # Overlays-RRO
 PRODUCT_PACKAGES += \
     redwoodCNSettingsProviderOverlay \
