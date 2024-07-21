@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The pixelstarOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_vili.mk
+    $(LOCAL_DIR)/pixelstar_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_vili-user \
-    lineage_vili-userdebug \
-    lineage_vili-eng
+    pixelstar_vili-user \
+    pixelstar_vili-userdebug \
+    pixelstar_vili-eng

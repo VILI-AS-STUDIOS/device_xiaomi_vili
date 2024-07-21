@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,14 +11,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from haydn device
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common pixelstar stuff.
+$(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
+
+# Stuff PixelStar
+PIXELSTAR_BUILD_TYPE := official
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BOOT_ANIMATION_RES := 1080
+USE_PIXEL_CHARGER := true
+TARGET_USES_BLUR_RECENT := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_CARRIER_SETTINGS := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := lineage_vili
+PRODUCT_NAME := pixelstar_vili
 
 PRODUCT_SYSTEM_NAME := vili_global
 PRODUCT_SYSTEM_DEVICE := vili
