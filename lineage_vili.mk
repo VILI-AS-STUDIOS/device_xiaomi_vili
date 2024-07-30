@@ -14,6 +14,12 @@ $(call inherit-product, device/xiaomi/vili/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Sakura stuff
+SAKURA_OFFICIAL := false
+SAKURA_MAINTAINER := Jezzay97
+TARGET_BOOT_ANIMATION_RES := 1080
+SAKURA_BUILD_TYPE := gapps
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
