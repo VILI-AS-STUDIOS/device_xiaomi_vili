@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.haydn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.haydn.rc
+    $(LOCAL_PATH)/rootdir/etc/init.redwood.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.redwood.rc
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -28,14 +28,14 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Overlays-RRO
 PRODUCT_PACKAGES += \
-    HaydnCNSettingsProviderOverlay \
-    HaydnCNWifiOverlay \
-    HaydnGLSettingsProviderOverlay \
-    HaydnGLWifiOverlay \
-    HaydnINSettingsProviderOverlay \
-    HaydnINWifiOverlay \
-    HaydnproCNSettingsProviderOverlay \
-    HaydnproCNWifiOverlay
+    redwoodCNSettingsProviderOverlay \
+    redwoodCNWifiOverlay \
+    redwoodGLSettingsProviderOverlay \
+    redwoodGLWifiOverlay \
+    redwoodINSettingsProviderOverlay \
+    redwoodINWifiOverlay \
+    redwoodproCNSettingsProviderOverlay \
+    redwoodproCNWifiOverlay
 
 # Refresh Rate
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -46,4 +46,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/haydn/haydn-vendor.mk)
+$(call inherit-product, vendor/xiaomi/redwood/redwood-vendor.mk)
