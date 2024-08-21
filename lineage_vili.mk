@@ -14,11 +14,13 @@ $(call inherit-product, device/xiaomi/vili/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Sakura stuff
-SAKURA_OFFICIAL := false
-SAKURA_MAINTAINER := Jezzay97
+# Risingos stuff
+TARGET_ENABLE_BLUR := true
+PRODUCT_NO_CAMERA := false
+RISING_MAINTAINER := Jezzay97
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-SAKURA_BUILD_TYPE := gapps
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
@@ -37,3 +39,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := Xiaomi/vili_global/vili:14/UKQ1.231207.002/V816.0.3.0.UKDMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Snapdragon 888" \
+    RISING_MAINTAINER="Jezzay97"
