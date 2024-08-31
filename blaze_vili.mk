@@ -12,13 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-# Sakura stuff
-SAKURA_OFFICIAL := false
-SAKURA_MAINTAINER := Jezzay97
-TARGET_BOOT_ANIMATION_RES := 1080
-SAKURA_BUILD_TYPE := gapps
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := Jezza97 && Omar99A
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
